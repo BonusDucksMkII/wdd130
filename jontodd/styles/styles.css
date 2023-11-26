@@ -17,7 +17,7 @@
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
+  --nav-link-color: #4FE899;
   --nav-background-color: #D4AC0D;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
@@ -27,12 +27,36 @@ header {
     text-align: center;
     font-family: var(--heading-font);
     padding: 1em;
-    border: 3px solid;
-    outline: 3px solid var(--primary-color);
+    border: 5px solid;
+    outline: 5px solid var(--primary-color);
     outline-offset: -20px;
     margin: 1em;
     font-size: 24px;
     background-color: white;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--heading-font);
+    padding: 1em;
+    border: 5px solid;
+    outline: 5px solid var(--primary-color);
+    outline-offset: -20px;
+    margin: 1em;
+    font-size: 24px;
+    background-color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:link, nav a:visited {
+  color: black;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
 }
 
 body {
@@ -53,6 +77,15 @@ nav {
 nav a {
   padding-top: 1em;
   background-color: white;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  color: var(--primary-color);
 }
 
 section {
@@ -65,6 +98,7 @@ section {
 
 section p {
   align-self: center;
+  margin: 2em;
 }
 
 section img {
@@ -75,7 +109,7 @@ section img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
-  border: 3px solid black;
+  border: 5px solid black;
 }
 
 #content img {
@@ -94,13 +128,17 @@ section img {
   align-self: center;
 }
 
-#hello, #velkomen {
+#greeting {
+  border: 5px solid var(--secondary-color);
+}
+
+#greeting img {
   grid-column: 1/2;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-#greeting {
+#greeting p{
   grid-row: 1/3;
   grid-column: 2/3;
   align-self: center;
