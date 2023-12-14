@@ -193,12 +193,12 @@ section img {
 #project1.project-div {
   grid-column: 1/2;
   margin-right: 1em;
-  border: 3px solid black;
+  border: 3px solid var(--accent1-color);
 }
 
 #project2.project-div {
   grid-column: 2/3;
-  border: 3px solid black;
+  border: 3px solid var(--accent1-color);
 }
 
 .project-div {
